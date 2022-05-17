@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f9f6e1;
+}
+nav img{
+    width: 70px;
+    position:absolute;
+    top: 1px;
+    left: 1%;
+    float: left;
+  }
+
+ul, nav{
+    list-style: none; 
+ }
+ a{
+   text-decoration: none;  
+   cursor: pointer;
+   color: inherit;
+ }
+ 
+ header{
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 10;
+     width: 100%;
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex ;
+     display: -o-flex;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color:rgb(0, 0, 0);
+     padding: 30px 100px 0;
+     
+     font-family: 'Raleway', sans-serif;
+   
+ }
+ header h2{
+     text-transform: uppercase;
+ }
+ header nav{
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex ;
+     display: -o-flex;
+     display: flex;
+ }
+ header nav li{
+     margin: 0 19px;
+     font-size: 22px;
+     font-weight: 500;
+ }
+ header nav li:first-child{
+     margin-left: 0;
+     font-size: 22px;
+ }
+ header nav li:last-child{
+     margin-right: 0;
+     font-size: 22px;
+ }
+ nav svg{
+     width: 70px;
+     position:absolute;
+     top: 1px;
+     left: 1%;
+     float: left;
+   }
+ nav li a:hover{
+     color:#BC6C25;
+     transition: 1.5s;
+ }
+ 
+ 
+ section{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex ;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+
+@media (max-width:1000px){
+    section{
+        padding: 100px 50px
+    }
+
+}
+@media (max-width:600px){
+    section{
+        padding: 125px 30px
+    }
+
+}
+section p{
+    max-width:800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+.banner-area{
+    position: relative;
+    justify-content: center;
+    min-height:100vh;
+    color:  rgb(0, 0, 0);
+    text-align: center;
+}
+
+.background .back-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index:-1;
+    opacity: 0.6;
+}
+
+.banner-area .banner-area:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color:#000;
+    opacity: 90;
+}
+
+.banner-area h1{
+    margin-bottom: 15px;
+    font-size: 70px;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+@media (max-width: 800px){
+    .banner-area{
+        min-height: 600px;
+    }
+    .banner-area h1{
+        font-size: 32px;
+    }
+  
+}
+ul.about-content{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex ;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+ }
+ .about-content li{
+     padding: 20px;
+     height: 490px;
+     background-clip: content-box;
+     background-position: center;
+     -webkit-background-size: cover;
+     background-size: cover;
+ }
+ .about-content li h2{
+     color:rgb(0, 0, 0);
+     font-family: 'Hind', sans-serif;
+ }
+ .about-content li p{
+     color:rgb(0, 0, 0);
+     font-family: 'Hind', sans-serif;
+ }
+ .about-left{
+     flex-basis: 40%;
+     background-image: url(images/adrian-valverde--TvZ6VB915M-unsplash.jpg);
+ 
+ }
+ 
+ .about-right{
+     flex-basis: 60%;
+ }
+ .about-area p{
+     max-width: 800px;
+     margin-bottom: 35px;
+     line-height: 1.5;
+     text-align: left;
+     padding-left: 0;
+ 
+ }
+ .about-area p a{
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+    color: #4F583D;
+    font-style: italic;
+    
+
+}
+ 
